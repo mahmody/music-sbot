@@ -96,7 +96,7 @@ client.on('message', async function(message) {
    
     const mess = message.content.toLowerCase();
     const args = message.content.split(' ').slice(1).join(" ");
-    const youtube = new simpleytapi(yt_api_key);
+    const youtube = new simpleytapi("AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4");
  
     if (!guilds[message.guild.id]) {
         guilds[message.guild.id] = {

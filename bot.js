@@ -10,7 +10,6 @@ const fetchVideoInfo = require("youtube-info");
 const simpleytapi = require('simple-youtube-api')
 const yt_api_key = "AIzaSyDoH9YxF0yi6ljyi2txYZHB10vXNUEP_2U"
 const prefix = "m-";
-client.login(process.env.SECERT_KEY);
 var guilds = {};
 /////////////////////////////////////////////////////////////////
 client.on('error', (err) => console.log(err));

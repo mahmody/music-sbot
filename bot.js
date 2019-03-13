@@ -1,3 +1,5 @@
+const Discord = require("discord.js");
+const RichEmbed = require("discord.js");
 const { Client, RichEmbed } = require("discord.js");
 const client = new Client({ disableEveryone: true})
 const ytdl = require("ytdl-core");

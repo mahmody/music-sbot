@@ -1,25 +1,25 @@
 const Discord = require('discord.js');
-
+ 
 const Util = require('discord.js');
-
+ 
 const getYoutubeID = require('get-youtube-id');
-
+ 
 const fetchVideoInfo = require('youtube-info');
-
+ 
 const YouTube = require('simple-youtube-api');
-
+ 
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
-
+ 
 const queue = new Map();
-
+ 
 const ytdl = require('ytdl-core');
-
+ 
 const fs = require('fs');
-
+ 
 const gif = require("gif-search");
-
+ 
 const client = new Discord.Client({disableEveryone: true});
-
+ 
 const prefix = "m-";
 var guilds = {};
 /////////////////////////////////////////////////////////////////
@@ -35,9 +35,9 @@ client.on('message', async function(message) {
     // const noms = "** ❯ :musical_note: No music is playing, try ``m-play``"
     const novc = "**<:MxNo:449703922190385153> | You are not in a voice channel.**"
     // const nomatch = "**<:MxNo:449703922190385153> You've to be in the same voice channel!**"
-    const yt = "<:MxYT:451042476552355841>"
-    const correct = client.guilds.get('448425456316973057').emojis.get("451040030635458574")
-    const nope = client.guilds.get('448425456316973057').emojis.get('451040031277056001')
+    const yt = client.guilds.get('555514309162303559').emojis.find(e => e.name.includes('youtube') || e.name.includes('yt'));
+    const correct = '✅'
+    const nope = '❌'
     // const member = message.member;
  
     if (message.content.startsWith(`${prefix}eval`)) {

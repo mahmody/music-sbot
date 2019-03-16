@@ -17,6 +17,7 @@ const ytdl = require('ytdl-core');
 const fs = require('fs');
  
 const gif = require("gif-search");
+const prefix = "!"
  
 const client = new Discord.Client({disableEveryone: true});
 client.on('message', async msg => {
